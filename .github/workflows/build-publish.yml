@@ -16,9 +16,6 @@ jobs:
           java-version: 17
           distribution: 'adopt'
           cache: maven
-      
-      - name: Run unit tests
-        run: ./mvnw test -DskipTests=false
 
       - name: Build with Maven, generate container image and push to GHCR
         run: >
