@@ -42,7 +42,6 @@ class ValidatorTests {
 
 	@Test
 	void shouldNotValidateWhenFirstNameEmpty() {
-
 		LocaleContextHolder.setLocale(Locale.ENGLISH);
 		Person person = new Person();
 		person.setFirstName("mr"); // TODO - shouldn't this be set to the empty string?
